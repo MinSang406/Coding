@@ -5,7 +5,7 @@ class Solution {
         int[] answer = {};
         String numbers;
         
-        numbers = my_string.replaceAll("[abcdefghijklmnopqrstuvwxyz]", "");
+        numbers = my_string.replaceAll("[a-z]", "");
 		String[] arr = numbers.split("");
 		
 		answer = new int [arr.length];
