@@ -2,9 +2,8 @@ class Solution {
     public int[] solution(String[] strlist) {
         int[] answer = new int [strlist.length];
 		
-		for(int j = 0; j < strlist.length; j++) {
-            String[] arr = strlist[j].split("");
-          	  answer[j] = arr.length;
+		for(int i = 0; i < strlist.length; i++) {
+            answer[i]= strlist[i].length();
 		}
         
         return answer;
