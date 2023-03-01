@@ -8,10 +8,10 @@ class Solution {
 		}
 		
 		for(int i = 0; i <arr.length; i++) {
-			if(65 <= (int)arr[i] && (int)arr[i] <= 90) {
+			if(65 <= arr[i] && arr[i] <= 90) {
 				answer += (char)((arr[i]) + 32);
 			}
-			else if(97 <= (int)arr[i] && (int)arr[i] <= 122) {
+			else if(97 <= arr[i] && arr[i] <= 122) {
 				answer += (char)((arr[i]) - 32);
 			}
 		}
