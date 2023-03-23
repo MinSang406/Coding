@@ -1,14 +1,10 @@
+
+import java.util.*;
+
 class Solution {
     public int solution(int[] numbers) {
-        int answer = numbers[0] * numbers[1];
-		
-		for(int i = 0; i < numbers.length; i++) {			
-			for(int j = 0; j < numbers.length; j++) {				
-				if(i != j) {
-					answer = Math.max(numbers[i] * numbers[j], answer);
-				}
-			}
-		}
-        return answer;
+        int len = numbers.length;
+        Arrays.sort(numbers);
+        return Math.max(numbers[0] * numbers[1], numbers[len - 2] * numbers[len - 1]);
     }
 }
